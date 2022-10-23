@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>307 Fire Department</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="index.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        body {
+    background-image: url('family\ photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .intro{
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    width: 100%;
+}
+.box {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    position: relative
+}
+.b a{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,.5);
+    border: 3px solid red;
+}
+.b a::before{
+    content: " ";
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+.b a::after{
+    content: " ";
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.b a:hover::before a:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.b a:hover{
+    background: red;
+    color: #000;
+    box-shadow: 0 0 50px red;
+    transition-delay: 0.5s;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="index.html"><span class="material-symbols-rounded">
+            cottage
+            </span> Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn"><span class="material-symbols-rounded">
+                link
+                </span>Useful Links 
+              <i class="fa fa-caret-down"></i>
+            </button>
+        <div class="dropdown-content">
+            <a href="http://go.usa.gov/xvNDP">Travel Voucher for UTA</a>
+            <a href="https://imr.afms.mil/imr/myIMR.aspx">IMR</a>
+            <a href="https://www.lhicare.com">PHAQ</a>
+            <a href=" https://static.e-publishing.af.mil/production/1/af_a4/publication/cfetp3e7x1c1/cfetp3e7x1c1.pdf">View what it requires to complete upgrade training</a>
+            <a href="https://wwww.militarycac.com">To learn how to enable cac</a>
+            <a href="http://go.usa.gov/xvNDP">Travel Voucher for UTA weekends</a>
+            <a href="https:\\go.usa.gov/xdsTR">Click Here to view your fire certs</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="material-symbols-rounded">
+            phone_in_talk
+            </span>Phone Numbers
+          <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="tel:318-331-3014">CSS</a>
+        <a href="tel:318-331-3048">UTM</a>
+        <a href="tel:318-331-3898">Fire Station</a>
+        <a href="tel:318-331-3014">Finance</a>
+        <a href="tel:318-331-3105">Medical</a>
+        <a href="tel:318-529-3775">Force Management</a>
+        <a href="tel:318-529-3122">Career Development</a>
+        <a href="tel:318-529-1922">Career Advisor</a>
+        <a href="tel:318-529-3118">FSS</a>
+  </div>
+  </div>
+         <a href="schedule.html"><span class="material-symbols-rounded">
+            date_range
+            </span>UTA Schedule</a>
+
+        <a href="weather.html"><span class="material-symbols-rounded">sunny</span>Barksdale Weather</a>
+        <a href="PT Tracker.html"><span class="material-symbols-rounded">
+            monitor_heart
+            </span>Fitness Tracker</a>
+      </div>
+    </div>
+</div>
+
+      <div class="intro">
+        <div class="box">
+      <h1>307 Fire Department</h1>
+      <h2 style="color:red">Barksdale Air Force Base, Louisiana</h2>
+    </div>
+    </div>
+<!-- This page will be added in later
+<div class="b">
+<a href="new.html">New Individuals Click Here</b>
+</div>
+-->
+
+
+<div class="version">
+    <p> Versions 2022.4</p>
+</div>
+
+
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"LQ4N89HD8XXXFU8G5XWXMGLSV", 
+       location:"Highway 70, Barksdale AFB, LA 71110", 
+       unitGroup:"us",
+       forecastDays:5, 
+       title:"Barksdale AFB",
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
+
+
+</body>
+</html>
